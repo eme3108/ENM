@@ -155,6 +155,6 @@ PredictOnNewData <- function(pcaSummary=NA,ProjectonStackFiles=NA,OutputFolder=N
     ## Till here
     
     FileName = paste(OutputFolder, "\\Comp",i,".asc", sep = "")
-    writeRaster(r2,FileName)
+    writeRaster(r2,FileName, overwrite = T)
   }
 }
